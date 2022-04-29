@@ -1,6 +1,6 @@
 ---
 title: "[Elastic Stack] 엘라스틱 스택 설치 for window"
-last_modified_at: 2022-04-23T16:01:04-04:00
+last_modified_at: 2022-04-27T16:01:04-04:00
 categories:
   - Elastic Stack
 tags:

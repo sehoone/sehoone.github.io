@@ -35,7 +35,7 @@ toc_label: "Getting Started"
 1. url : [https://www.elastic.co/kr/downloads/past-releases#elasticsearch](https://www.elastic.co/kr/downloads/past-releases#elasticsearch)
 
 2. 다운로드  
-![image](/assets/images/elasticsearch1.png){: width="50%" height="50%"}
+![image](/assets/images/elasticsearch-install1.png){: width="50%" height="50%"}
 
 ### elasticsearch-실행
 
@@ -57,7 +57,7 @@ curl -X GET "localhost:9200/?pretty"
 ```
 http://localhost:9200/
 ```
-  ![image](/assets/images/elasticsearch2.png){: width="70%" height="70%"}
+  ![image](/assets/images/elasticsearch-install2.png){: width="70%" height="70%"}
 
 ## kibana
 

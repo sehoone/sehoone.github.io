@@ -1,6 +1,6 @@
 ---
 title: "[AWS-SAA] Amazon S3(2)"
-last_modified_at: 2022-06-01T16:01:04-04:00
+last_modified_at: 2022-06-02T16:01:04-04:00
 categories:
   - AWS-SAA
 tags:

@@ -26,7 +26,7 @@ toc_label: "AWS-SAA"
 - **NACL**: 서브넷에서 들어오고 나가는 트래픽을 제어하기 위해 방화벽 역할을 수행하는 VPC에 대한 선택적 보안 계층. 상태 비저장(stateless). 인바운드 및 아웃바운드에 대한 서브넷 규칙, Ephemeral포트 사용
 - **Security Groups**: 상태 저장(stateful). EC2 인스턴스 수준에서 작동
 - **Reachability Analyzer**: AWS 간의 네트워크 연결 테스트 수행
-- **VPC Peering: 비중첩 CIDR, 비전이성을 사용하여 두 VPC 연결
+- **VPC Peering**: 비중첩 CIDR, 비전이성을 사용하여 두 VPC 연결
 - **VPC Endpoints**:  private access AWS Services 제공(S3, DynamoDB, CloudFormation, SSM) within a VPC
 - **VPC Flow Logs**:  VPC/서브넷/ENI 수준에서 ACCEPT 및 REJECT 트래픽, 공격 식별에 도움, Athena 또는 CloudWatch Logs를 사용하여 분석
 - **Site-to-Site VPN**:  DC(direct connect)에 고객 게이트웨이, VPC에 가상 사설 게이트웨이 설정. VPN을 사용하여 공용 인터넷을 통한 사이트 간 연결

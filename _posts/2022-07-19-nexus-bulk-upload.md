@@ -28,7 +28,7 @@ private nexus repository를 통해서 dependency를 가져올때, 인터넷이 �
 ```shell
 #!/bin/bash
 # maven bulk import. https://github.com/sehoone/nexus-utils/blob/main/bulk-import-lib/mavenimport.sh
-# 사용법_repository에 해당 파일 복사 후 실행. ./mavenimport.sh -r -r http://localhost:5001/repository/maven-hosted -u admin -p admin123
+# 사용법_repository에 해당 파일 복사 후 실행(window는 명령어에서 './' 제거). ./mavenimport.sh -u admin -p admin123 -r http://localhost:5001/repository/maven-hosted 
 # Get command line params
 while getopts ":r:u:p:" opt; do
 	case $opt in
@@ -45,6 +45,7 @@ find . -type f -not -path './mavenimport\.sh*' -not -path '*/\.*' -not -path '*/
 - 위의 shell 'mavenimport.sh' 을 로컬 maven repository 에 복사(ex. C:/Users/{로컬pc사용자명}/.m2/repository/)
 - 실행: ./mavenimport.sh -u {nexusId} -p {password} -r {respositoryUrl} (ex. ./mavenimport.sh -u admin -p open1404! -r http://localhost:5001/repository/test-maven-hosted/)   
 ![image](/assets/images/nexus/nexus_maven_repo3.png){: #magnific width="100%" height="100%"}
+- trouble shooting: 라이브러리관리를 gradle을 사용을 하는경우는 local 라이브러리 디렉토리 구조가 달라서 위와같이 진행하면 안됨. gradle을 maven으로 수정하여 라이브러리를 받아야함.  
 
 # 2. npm
 ## 2-1 npm blob 생성

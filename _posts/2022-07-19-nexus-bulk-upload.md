@@ -59,7 +59,11 @@ find . -type f -not -path './mavenimport\.sh*' -not -path '*/\.*' -not -path '*/
 - npm(hosted) 선택 > repository 정보 입력. name(ex. test-npm-hosted), blob store(default) 정보 입력   
 ![image](/assets/images/nexus/nexus_npm_repo2.png){: #magnific width="100%" height="100%"}
 
-## 2-3 npm dependency pack
+## 2-4 nexus npm publish Realms 추가
+- admin config(왼쪽상단 톱니바퀴) > Realms(왼쪽 네비게이션) > npm Bearer Token Realm 추가
+![image](/assets/images/nexus/nexus_npm_realms.png){: #magnific width="100%" height="100%"}
+
+## 2-5 npm dependency pack
 - node_module을 npm dependency 업로드를 위해서 tgz파일로 packing. npm dependency는 1개의 라이브러리 내부에서 dependency를 가져오는 경우가 있어서 일괄 tgz로 만드는 작업이 필요합니다.
 - https://github.com/sehoone/nexus-utils/tree/main/node-module-pack-all
 - 위의 레파지토리를 clone 받아서 아래의 경로 수정하여 'yarn run start' 를 실행
@@ -70,7 +74,7 @@ const TARGET_PATH = "/dev/temp/module_test2"; // packing한 tgz파일이 생성�
 ```
 - 실행: yarn run start
 
-## 2-4 일괄 업로드 shell 실행
+## 2-6 일괄 업로드 shell 실행
 - **packing 디렉토리에서 shell을 실행하여 일괄 upload. 폐쇠망 환경에서 디펜던시 업로드를 위해서는 packing디렉토리와 shell을 사용하여 일괄업로드**
 ```shell
 #!/bin/bash

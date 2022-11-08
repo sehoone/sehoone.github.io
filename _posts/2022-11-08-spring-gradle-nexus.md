@@ -16,7 +16,9 @@ private nexus repository를 통해서 dependency를 가져올때, 인터넷이 �
 
 # 1. build.gradle   
 - dependency 를 아래의 nexus를 참조하여 가져오게끔 합니다.   
-build.gradle   
+![image](/assets/images/spring-nexus\spring_nexus1.png){: width="30%" height="30%"}   
+
+- build.gradle   
 ```gradle
 repositories {
 	// mavenCentral()
@@ -29,7 +31,9 @@ repositories {
 
 # 2. settings.gradle   
 - plugin을 사용할경우, 아래의 nexus를 참조하여 가져오게끔 합니다.   
-settings.gradle
+![image](/assets/images/spring-nexus\spring_nexus2.png){: width="30%" height="30%"}  
+
+- settings.gradle
 ```gradle
 pluginManagement {
     repositories {

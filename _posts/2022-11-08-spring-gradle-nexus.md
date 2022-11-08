@@ -49,3 +49,19 @@ plugins {
 }
 ```
 
+# 3. vscode gradle (vscode를 사용할 경우)
+- local build를 할때, gradle bin을 참조하는데 이떄도 외부 url을 참조하게되는데 이 경우에는 bin파일 자체를 가져와서 환경을 만들어주면 offline 환경에서 사용가능합니다
+## 3-1 환경 확인
+- {project}\gradle\wrapper\gradle-wrapper.properties 을 보면 아래와 같이 외부 주소를 참조하고 있습니다   
+- distributionUrl 에 로컬 디렉토리를 넣어서 해봤는데, 윈도우 환경에서는 경로정의가 잘 안되는 듯합니다.(해보다가 실패..) 그래서 그냥 'wrapper/dists' 를 가져와서 셋팅하였습니다.    
+```xml
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.4.1-bin.zip
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+```
+
+## 3-2 gradle bin local pc에 복사
+- 온라인 환경에서 아래의 gradle bin을 local pc에 복사
+- 경로: 'C:\Users\{사용자}\.gradle\wrapper'  .gradle 경로 전체를 가져와도 되긴한데 해당 경로에 dependency 들이 모두 있어서 용량이 많이 나갈 수 있습니다. 그래서 wrapper 만 가져오고 local pc에 .gradle\wrapper 경로와 동일하게 위치 시킵니다    

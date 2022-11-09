@@ -8,15 +8,14 @@ tags:
 toc: true
 toc_label: "Spring"
 ---
-private nexus repository를 통해서 dependency를 가져올때, 인터넷이 되는 환경에서는 proxy repository를 사용하면 간단히 dependency를 가져올 수 있다.   
-   
-하지만 망분리된 오프라인 환경에서 nexus를 사용하면 dependency를 오프라인 환경에 반입해서 nexus에 업로드 해야한다.   
+인터넷이 되는 환경에서는 meven repository(mavenCentral()) 에서 dependency를 가져올 수 있다.   
+하지만 망분리된 오프라인 환경에서는 private nexus를 참조해서 dependency를 가져와야한다.   
 
 이때, Spring + Gradle 프레임워크에서 private nexus를 참조하게끔 하는 방법을 공유합니다.   
 
 # 1. build.gradle   
 - dependency 를 아래의 nexus를 참조하여 가져오게끔 합니다.   
-![image](/assets/images/spring-nexus\spring_nexus1.png){: width="30%" height="30%"}   
+![image](/assets/images/spring-nexus/spring_nexus1.png){: width="30%" height="30%"}   
 
 - build.gradle   
 ```gradle

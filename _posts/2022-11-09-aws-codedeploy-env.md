@@ -61,29 +61,7 @@ sudo service codedeploy-agent restart
 # 3. codedeploy appspec 정의
 - aws codedeploy에 appspec.yml, shell, jar 을 tar로 묶어서 전달합니다
 - appspec.yml   
-```yaml
-version: 0.0
-os: linux
-files:
-  - source: /jar
-    destination: /swhome/my-server-home/
-
-permissions:
-  - object: /
-    pattern: "**"
-    owner: wasadmin
-    group: wasadmin
-
-hooks:
-  ApplicationStop:
-    - location: /bin/my-was-shutdown.sh
-      timeout: 60
-      runas: wasadmin
-  ApplicationStart:
-    - location: /bin/my-was-startup.sh
-      timeout: 60
-      runas: wasadmin
-```
+![image](/assets/images/aws-codedeploy/aws-codedeploy1.png){: width="30%" height="30%"}  
 
 - my-was-shutdown.sh   
 ```shell

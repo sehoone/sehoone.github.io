@@ -8,7 +8,7 @@ tags:
 toc: true
 toc_label: "Tomcat"
 ---
-Tomcat 을 사용하여 어플리케이션을 뛰울때, 환경변수가 필요할 경우 환경변수를 설정하는 방법을 공유합니다. 
+Tomcat 을 사용하여 어플리케이션을 뛰울때, 환경변수가 필요할 경우 환경변수를 설정하는 방법을 공유합니다.  
 
 테스트 환경
 - OS: Red Hat Enterprise Linux 8.6

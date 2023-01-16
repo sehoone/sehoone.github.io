@@ -23,7 +23,7 @@ git clone --mirror {기존 git주소}
 - 이때, 1번에서 clone 받은 프로젝트 디렉토리로 들어가서 명령어를 수행합니다.
 ```shell
 cd {1번에서 수행한 reposotory 디렉토리}
-git remote set-url --push orgin {이동할 git주소}
+git remote set-url --push origin {이동할 git주소}
 ```
 
 # 3. git push

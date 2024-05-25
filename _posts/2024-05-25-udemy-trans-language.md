@@ -24,8 +24,8 @@ toc_label: "etc"
 ```javascript
 let lastText = '';
 function check() {
-    let toEl = document.querySelector('.well--container--afdWD span');
-    let fromEl = document.querySelector('p[data-purpose="transcript-cue-active"] span');
+    const toEl = document.querySelector('.well--container--afdWD span');
+    const fromEl = document.querySelector('p[data-purpose="transcript-cue-active"] span');
     if(!toEl || !fromEl) return;
     let currentText = fromEl.innerText;
     if (lastText !== currentText) { toEl.innerText = currentText } lastText = fromEl.innerText

@@ -28,10 +28,13 @@ function check() {
     const fromEl = document.querySelector('p[data-purpose="transcript-cue-active"] span');
     if(!toEl || !fromEl) return;
     let currentText = fromEl.innerText;
-    if (lastText !== currentText) { toEl.innerText = currentText } lastText = fromEl.innerText
+    if (lastText !== currentText) {
+        toEl.innerText = currentText;
+        lastText = currentText;
+    }
 }
 
-window.i = setInterval(check, 200)
+setInterval(check, 200);
 ```
 ![image](/assets/images/etc-udemy/udemy-script.png){: width="70%" height="70%"} 
 

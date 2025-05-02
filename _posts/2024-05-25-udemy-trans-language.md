@@ -24,7 +24,7 @@ toc_label: "etc"
 ```javascript
 let lastText = '';
 function check() {
-    const toEl = document.querySelector('.well--container--afdWD span');
+    const toEl = document.querySelector('div[data-purpose="captions-cue-text"]');
     const fromEl = document.querySelector('p[data-purpose="transcript-cue-active"] span');
     if(!toEl || !fromEl) return;
     let currentText = fromEl.innerText;
